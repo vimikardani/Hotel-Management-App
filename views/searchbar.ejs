@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+
+<div class="serch-bar">
+    <div class="search-title">
+        <a class="search-a" href="#">Stays</a>
+        <a class="search-a" href="#">Experiences</a>
+        <a class="search-a" href="#">Online Experience</a>
+    </div>
+    <div class="search-area">
+        <div class="search-where search-group">
+            <div class="label-text">Where</div>
+            <input class="search-area-input" type="text" placeholder="Search destination">
+        </div>
+        <div class="search-checkin search-group">
+            <div class="label-text">Check in</div>
+            <input class="search-area-input" type="date" placeholder="Add dates">
+        </div>
+        <div class="search-checkout search-group">
+            <div class="label-text">Check out</div>
+            <input class="search-area-input" type="date" placeholder="Add dates">
+        </div>
+        <div class="search-who search-group">
+            <div class="label-text">Who</div>
+            <input class="search-area-input guest-input " type="number" placeholder="Add guest">
+        </div>
+        <div class="search-area-btn">
+            <button class="serch-icon bigserch-btn">
+                <svg class="bigserch-svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                    role="presentation" focusable="false"
+                    style="display: block; fill: none; height: 20px; width: 20px; stroke: white; stroke-width: 5.33333; overflow: visible;">
+                    <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer") %>
+

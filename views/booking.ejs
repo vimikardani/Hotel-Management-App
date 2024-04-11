@@ -1,0 +1,138 @@
+<%- include("partials/header") %>
+    <%- include("partials/home-navbar") %>
+
+    <!-- hotel booking page UI -->
+    
+        <div class="booking-container">
+            <div class="booking-detail">
+                <div class="booking-title">
+                    <span class="left-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Back" role="img"
+                            focusable="false"
+                            style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                            <path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path>
+                        </svg>
+                    </span>
+                    <span class="req-text">Request to book</span>
+                </div>
+                <div class="trip-detail">
+                    <span class="trip-text">Your trip</span><br>
+                    <div class="bookingInfo">
+                        <div class="date-title">
+                            <span class="date-text">Dates</span>
+                            <span class="dates"><%= bookinginfo.checkinDate %> - <%= bookinginfo.checkoutDate %></span>
+                        </div>
+                        <div class="date-edit">
+                            <a class="dateEdit" href="/hotel/<%=hotelinfo._id%>">Edit</a>
+                        </div>
+
+                    </div>
+                    <div class="guestinfo">
+                        <div class="guest-title">
+                            <span class="guest-text">Guest</span>
+                            <span class="guests"><%= bookinginfo.totalGuest %> guest</span>
+                        </div>
+                        <div class="guest-edit">
+                            <a class="guestEdit" href="/hotel/<%=hotelinfo._id%>">Edit</a>
+                        </div>
+
+                    </div>
+                    <hr>
+                    
+                </div>
+            </div>
+            <div class="booking-payment">
+                <div class="bookedHotelinfo">
+                    <div class="hotelImage">
+                        <img class="hotel-photo"
+                            src="<%= hotelinfo.images[1] %>">
+                    </div>
+                    <div class="hotelName">
+                        <div class="hotel-name-text"><%= hotelinfo.hoteltitle %></div>
+                        <div class="star-rating">
+                            <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                aria-hidden="true" role="presentation" focusable="false"
+                                style="display: block; height: 10px; width: 10px; fill: currentcolor;">
+                                <path fill-rule="evenodd"
+                                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                                </path>
+                            </svg> 4.00 (review)
+                        </div>
+
+                    </div>
+                </div>
+                <div class="priceDetail">
+                    <div class="price-title">Price details</div>
+                    <div class="bookingData">
+                        <div class="bookedDays">
+                            <svg class="rs-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                fill="currentColor" class="bibi-currenc.65+56-+y-rupee" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                            </svg>
+                            <%= bookinginfo.rentPerNight %> X <span class="bookedDays" id="noofDays">1</span>
+                        </div>
+                        <div class="amount">
+                            <svg class="rs-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                fill="currentColor" class="bibi-currency-rupee" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                            </svg>
+                            <%= bookinginfo.totalAmount %>
+                        </div>
+                    </div>
+                    <div class="airbnb-fees">
+                        <div class="airbnbFees"><a class="airbnb-link" href="#">Airbnb service fee</a></div>
+                        <div class="serviceCharge">
+                            <svg class="rs-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                fill="currentColor" class="bibi-currency-rupee" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                            </svg>
+                            <%= bookinginfo.serviceCharge %>
+                        </div>
+
+                    </div>
+                    <div class="Taxes">
+                        <div class=""><a class="airbnb-link" href="#">Taxes</a></div>
+                        <div class="Tax-charge">
+                            <svg class="rs-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                fill="currentColor" class="bibi-currency-rupee" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                            </svg>
+                            <%= bookinginfo.tax %>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="totalINR">
+                        <div class="total-text">Toal(INR)</div>
+                        <div class="totalAmount"><svg class="rs-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            fill="currentColor" class="bibi-currency-rupee" viewBox="0 0 16 16">
+                            <path
+                                d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                        </svg>
+                        <span id="totalINR" class="totalAmount"></span>
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                      <button class="paymentBtn"><a class="paymentLink" href="/user/login">Proceed to Pay</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script>
+                var totalAmount= " <%= bookinginfo.totalAmount %>";
+                var serviceCharge="<%= bookinginfo.serviceCharge %>";
+                var tax="<%= bookinginfo.tax %>";
+
+                function calTotalINR(){
+                    const totalINR=parseInt(totalAmount)+parseInt(serviceCharge)+parseInt(tax);
+                    document.getElementById("totalINR").innerHTML=totalINR;
+                }
+                calTotalINR();
+            </script>
+            <!-- <%- include("partials/footer") %> -->

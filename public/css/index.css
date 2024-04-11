@@ -1,0 +1,1833 @@
+ /* set style for navbar elements */
+ *{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #222;
+    margin: 0;
+    padding: 0;
+ }
+ /* Style on Navbar */
+ nav{
+    width:100%;
+    height: 8vh; 
+    border-bottom: 1px solid lightgray;
+    padding: 1rem;
+    
+ }
+div.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+/* set logo position and set style */
+div.logo{
+    margin-right: 30rem;
+}
+div.logo img{
+    height:75px;
+    width:120px;
+    margin-top: -1rem;
+    margin-right: 5rem;
+}
+/* set style on search box */
+div.search-box{
+    width:25%;
+    height:5vh;
+    border: 1px solid lightgray;
+    border-radius: 40px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    padding: 0.5rem;
+    text-align: center;
+    margin-left: -20rem;
+
+}
+/* set style on Search buttons */
+button.serch-btn{
+    border: none;
+    background-color: #fff;
+    width: 28%; 
+}
+input.serch-input{
+  border: none;
+  margin-right: 6rem;
+  width: 15vw;
+  font-size: 16px;
+}
+
+button.serch-icon{
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background-color: #ff385c;
+    border: none;
+}
+svg.serch-svg-icon{
+    margin-left: 0.6rem;
+}
+
+/* set style on profile div */
+div.profile{
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-left: 10rem;
+    
+}
+/* set style on airbnb button */
+button.airbnb-button{
+    border: none;
+    color: #5c5b5b;
+    background-color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+}
+button.airbnb-button:hover{
+    background-color: rgb(247, 247, 247);
+    border-radius: 50px;
+    
+}
+
+/* set style on language icon  */
+div.language{
+    margin-top: 1.5rem;
+}
+/* set style on user profile button */
+button.user-profile{
+    height:7.5vh;
+    width:6.3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+/* set style on dropdown button */
+div.dropdown{
+  width:18vw;
+  position: absolute;
+  right: 3rem;
+  top: 11.5%;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  display: none;
+  z-index: 1;
+}
+/* set style on dropdown links */
+div>ul.dropdown-links{
+  list-style: none;
+}
+li>button.dropdown-links-btn{
+  width: 100%;
+  height: 5vh;
+  text-align: left;
+  border: none;
+  background-color: #fff;
+  padding-left: 0.8rem;
+  color: #717171;
+  padding-top: 0;
+}
+button>a.login-link,a.regi-link{
+  color:#717171 ;
+  text-decoration: none; 
+}
+li>button.dropdown-links-btn:hover{
+  background-color: #faf9f9;
+}
+li>button.linkbtn-text{
+  font-weight: 550;
+  color:#5c5b5b;
+}
+hr{
+  width: 100%;
+  margin-left: 0rem;
+  margin-top: 1rem;
+  
+}
+
+/* registration page CSS */
+div.regi-container{
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: white;
+  height: auto;
+  width: 45vw;
+  background-color: white;
+  border: 1px solid lightgray;
+  margin-left: 5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+div.regi-form{
+  margin-left: 2rem;
+}
+p.regi-title{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+p.regi-p{
+  font-size: 18px;
+
+}
+/*style on input field  */
+input.regi-input {
+  width: 40vw;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  background: #f1f1f1;
+}
+
+input.regi-input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the registration button */
+button.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 42vw;
+  opacity: 0.9;
+}
+
+button.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* login page CSS */
+
+div.login-model,div.regi-model{
+  margin: 0rem 20rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  top:1rem;
+  z-index: 3;
+  display: none;
+}
+div.loginModel {
+  position: absolute;
+  top: 2rem;
+  left: 8rem;
+  bottom: 2rem;
+  height: 80vh;
+  width: 40vw;
+  border: 1px solid lightgray;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 10px;
+  z-index: 1;
+}
+div.login-page{
+  margin: 2rem 29rem;
+  height: 80vh;
+  width: 40vw;
+  border: 1px solid lightgray;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 10px;
+  z-index: 1;
+}
+div.login-header{
+  width: 40vw;
+  text-align: center;
+  margin-top: 2rem;
+  
+}
+button.closeLoginbtn,button.closeregiBtn{
+  float: right;
+  font-size: 20px;
+  background-color: #fff;
+  border: none;
+  margin-top: -1rem;
+  margin-right: 1rem;
+  color: #717171;
+}
+/* style on login title */
+div>span.login-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* style on login form */
+form.login-form {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+div.airbnb-title{
+  font-size: 22px;
+  text-align: left;
+}
+div.container {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+/* style on user input */
+input.input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+/* style on sign in and signup button */
+button.signin-btn,
+button.signup-btn {
+  background-color: #ff385c;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  margin: 8px 5px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 5px;
+}
+/* hover effect on buttons */
+button.signin-btn:hover {
+  opacity: 0.8;
+  background-color: rgb(236, 97, 143);
+}
+button.signup-btn:hover {
+  background-color: rgb(141, 230, 141);
+}
+/* set style on signup link */
+button>a.signup-link{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/* Home.ejs CSS */
+
+/* set style on home page main div */
+div.home-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+/* set style on hotels options */
+div.hotel-options{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+}
+/* set style on arrow buttons */
+button.arrow-btn{
+    border-radius: 50%;
+    height:2rem;
+    width: 2rem;
+    border: 1px solid lightgray;
+    background-color: #fff;
+}
+button.arrow-btn:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform:scale(1.1);
+    transform-style: preserve-3d;
+}
+svg.arrow-icon{
+    margin-left: 0.5rem;
+}
+/* set style on hotel button */
+button.hotel-type-btn{
+    background-color: #fff;
+    border: none;
+    padding-left: 2.2rem;
+}
+/* set style on hotel images */
+img.hoteltype-image{
+    height:4vh;
+    width:2vw;
+    opacity: 0.6;
+}
+span.hoteltype-name{
+    color:gray;
+    font-size: 12px;
+}
+/* set style on filter button */
+button.filter-btn{
+    width:7vw;
+    height:8vh;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap:10px;
+    margin-left: 1rem;
+}
+/* set style on taxable button */
+div.totaltaxbleamt{
+    width:20%;
+}
+button.taxable-amount{
+    width:17vw;
+    height:8vh;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap:10px;
+    margin-left: 1rem;
+}
+span.text{
+    font-size: 12px;
+}
+/* set style on toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color:#5c5b5b;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #5c5b5b;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }  
+
+  /* Hotel card Stylesheet */
+
+  /* set style on Hotel card div */
+  div.card-container{
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+div.hotel-card{
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+}
+/* set style on hotel images */
+  div.hotel-images{
+    width:21vw;
+    height:48vh;
+    position: relative; 
+  }
+  img.hotel-photos{
+    width:21vw;
+    height:48vh;
+    border-radius: 10px;
+  }
+  /* set style on like button */
+  div.like-button{
+    position: absolute;
+    right: 0.5rem;
+    top:1rem;
+  }
+  /* set style on arrow button */
+  button.left-arrow-btn{
+    position: absolute;
+    right: 0.5rem;
+    top:10rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: none;
+  }
+  div>span.text-bold{
+    font-weight: bold;
+    font-size: 14px;
+  }
+  div>span.text-color{
+    color: #5c5b5b;
+  }
+  /* set style on load more button and continue text */
+  div.load-more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  div>span.continue-text{
+    font-weight: bold;
+    font-size: 16px;
+  }
+  div>button.load-more-btn{
+    height:7vh;
+    width: 9vw;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #222;
+    border: none;
+    border-radius: 10px;
+  }
+  /* set style on inspiration area */
+  div.inspiration{
+    padding:2.2rem;
+  }
+  div>span.insp-title{
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: 600;
+    line-height: 1.6rem;
+    letter-spacing: 0.01rem;
+  }
+  div.insp-options{
+    border-bottom: 1px solid lightgray;
+  }
+  div>button.insp-button{
+    border: none;
+    background-color: rgb(247, 247, 247);
+    padding: 1rem;
+    padding-left: 0;
+    font-size: 14px;
+    font-weight:550;
+    color: #717171;
+    letter-spacing: 0.01rem;
+    cursor: pointer;
+  }
+
+  /* Inspiration gatways stylesheet */
+  div.inspiration{
+    margin-top: 3rem;
+    background-color:rgb(247, 247, 247);
+  }
+/* set style on gatways options */
+  div.insp-gatways{
+    background-color:rgb(247, 247, 247);
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-left: 2.2rem;
+    gap:1rem;
+    
+  }
+  div>a.gatways-options{
+    text-decoration:none ;
+    display: flex;
+    flex-direction:column;
+    padding-top: 0rem;
+  }
+  a>span.gatway-title{
+    color: #222;
+    font-weight: 500;
+    width: 12vw;
+    padding-top: 1.5rem;
+
+  }
+  a>span.gatway-info{
+    color: #5c5b5b;
+  }
+  a.show-more{
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Footer Stylesheet */
+  footer{
+    background-color:rgb(247, 247, 247);
+  }
+  div.footer-border{
+    border-bottom: 1px solid lightgray; 
+  }
+  div.footer-end{ 
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
+    margin-right: 22rem;
+    margin-left: 2.2rem;
+    
+  }
+  div>span.footer-end-title{
+    font-weight: 600;
+    color:#5c5b5b;
+  }
+  div>ul.support-list,ul.hosting-list,ul.airbnb-list{
+    list-style: none;
+    padding-top: 0.2rem; 
+  }
+  /* set style on footer links */
+  li{
+    padding-top: 0.8rem;
+  }
+  ul>li>a{
+    text-decoration: none;
+    color:#5c5b5b;
+  }
+  div.footer-end-border{
+    border: 1px solid lightgray;
+    width: 95vw;
+    margin-left: 1rem;
+  }
+  div.footer-sm-left{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.2rem;
+    margin-top: 1.5rem;
+  }
+  span>ol.footer-links{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 1rem;
+    margin-top: -1.7rem;
+  }
+  span>ol>li{
+    padding-left: 1rem;
+  }
+  span>ol>li>a{
+    text-decoration: none;
+  }
+  span>ol>li>a:hover{
+    text-decoration: underline;
+  }
+  li>div.footer-dot{
+    height: 0.15rem;
+    width: 0.15rem;
+    border-radius: 50%;
+    background-color: #5c5b5b;
+    font-size: 20px;
+    margin-top: 0.7rem;
+    color: #5c5b5b;
+  
+  }
+
+  /* hotels.ejs file stylesheet */
+
+  /* set style on hotels header */
+  div.hotels-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+  }
+  div.hotel-name{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  /* set style on hotel right part */
+  div.hotel-right{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+    gap:1rem;
+  }
+  div>button.action-btn{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border: none;
+    gap:0.5rem;
+    text-decoration: underline;
+    font-weight: 500; 
+  }
+/* set style on hotel images */
+  div.hotels-images{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  div.left-images{
+    margin-left: 8rem;
+  }
+  div>img.img-left{
+    width: 560px;
+    height: 305px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  div>img.img-right{
+    width: 272px;
+    height: 150px;
+  }
+  div>img.border-top-img{
+    border-top-right-radius: 10px;
+  }
+  div>img.border-bottom-img{
+    border-bottom-right-radius: 10px;
+  }
+  /* set style on hotel info and other facility info */
+  div.hotels-info-booking{
+    display: inline-flex;
+  }
+  div.hotel-info{
+    width: 48vw;
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+  div.hotel-facility{
+    margin-top: -1rem;
+  }
+  div>span.hotel-name-city{
+    font-size: 22px;
+    color: #222;
+    font-weight: 500;
+  }
+  span>ol.hotel-facility-details{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  ol>li.facility-list{
+    font-size: 16px;
+    margin-left:-1rem;
+  }
+  div.hotel-dot,div.hotel-review-dot{
+    height: 0.15rem;
+    width: 0.15rem;
+    border-radius: 50%;
+    background-color: #5c5b5b;
+    font-size: 20px;
+    margin-top: 0.7rem;
+    margin-left: -0.5rem;
+    color: #5c5b5b;
+  }
+  div.hotel-review-dot{
+    margin-left: 0.5rem;
+  }
+  div.hotel-reviews{
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    font-weight: 600;    
+  }
+  .hotel-review-text{
+    font-size: 16px;
+  }
+  hr.hotel-hr{
+    width: 100%;
+  }
+
+  /* set style on other hotels details like hosted and other */
+  div.hotel-hosted{
+    display: inline-flex;
+    margin-top: 1.5rem;
+  }
+  div>img.hosted-image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  div.hosted-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+  }
+  div>span.hosting-title{
+    font-size: 16px;
+    color: #222;
+    font-weight:600;
+  }
+  div.hosting-time{
+    display: inline-flex;
+    gap: 0.1rem;
+  }
+  div>span.hosting-text{
+    color: #717171;
+  }
+  div.hosting-dot{
+    margin-left: 0.5rem;
+  }
+  div.hotel-hosting-info{
+    display: inline-flex;
+    margin-top: 1.5rem;
+  }
+  div.hotel-someinfo{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    height: 5vh;
+    background-color:#F7f7F7;
+    border-radius: 10px;
+  }
+  span.hotel-someinfo-text{
+    padding-left: 0.5rem;
+    font-size: 16px;
+  }
+  div>button.show-original-btn{
+    border: none;
+    font-size: 16px;
+    background-color:#F7f7F7 ;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  div.hotel-description{
+    margin-top: 2rem;
+  }
+  div>p.hotel-description-text{
+    font-size: 16px;
+  }
+  div>p.spaces-text{
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+  div>button.show-more-btn{
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    background-color: #fff;
+    margin-top: 1rem;
+  }
+
+  /* set style on hotel booking */
+  div.hotel-booking{
+    width: 32.5vw;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+  }
+  /* booking div style */
+  div.booking{
+    width: 28vw;
+    height: max-content;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+  }
+  /* rate per night style */
+  div.rate-per-night{
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  span.hotel-rate{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  div>span.rate-night{
+    font-size: 16px;
+  }
+  b.rate-text{
+    font-size: 20px;
+  }
+  /* checkin checkout button style */
+  div>button.checkinOut{
+    width: 24vw;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    border: 1px solid lightgray;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #fff;
+  }
+  div.check-in{
+    border-right: 1px solid lightgray;
+    width: 50%;
+    margin-right: 1rem;
+    margin-left: -1rem;
+  }
+  label.check-in-text,label.check-out-text{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  div>input.check-in-date,div>input.check-out-date{
+    border: none;
+  }
+  /* No og guest selection style  */
+  div.guest{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 22.9vw;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  div>label.guest-text{
+    font-size: 16px;
+    margin: 0.5rem;
+  }
+  div>input.guest-count{
+    border: 1px solid lightgray;
+    width: 8vw;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  div.guest-rules{
+   text-align: center;
+    
+  }
+  div>p.rules-text{
+    font-size: 11px;
+    margin-left: 1rem;
+  }
+  /* reserve button style */
+div>button.btnComplete{
+  width:24vw;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-image: linear-gradient(to right,rgb(230,30,77),rgb(230,30,78),rgb(230,30,79),rgb(229,29,83),rgb(228,29,87),rgb(229,29,90),rgb(229,29,83),rgb(222,29,83),rgb(221,16,99),rgb(220,13,99),rgb(219,12,100),rgb(229,29,83),rgb(218,10,100),rgb(215,7,102));
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin: 1rem 2rem;
+}
+  
+
+/* Booking.ejs page stylesheet */
+
+/* style on booking page */
+div.booking-container{
+  margin-top: 5rem;
+  margin-left: 6.5rem;
+  display: inline-flex;
+  margin-bottom: 2rem;
+}
+div.booking-title{
+  display: inline-flex;
+  
+}
+div>span.req-text{
+  font-size: 32px;
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+/* booking trip style */
+div.trip-detail{
+  margin-top: 2rem;
+  width: 40vw;
+}
+div>span.trip-text{
+  font-size: 22px;
+  font-weight: bold;
+}
+/* guest and booking style  */
+div.bookingInfo,div.guestinfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+/* seet style on date guest and other details */
+div.date-title,div.guest-title{
+  display: flex;
+  flex-direction: column;
+}
+div>span.date-text,div>span.guest-text{
+  font-size: 16px;
+  font-weight: bold;
+}
+div>span.dates,div>span.guests{
+  font-size: 16px;
+  color: #222;
+}
+div>a.dateEdit,div>a.guestEdit{
+  color: #222;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* set style on booking payment div */
+div.booking-payment{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  width: 35vw;
+  margin-left: 8rem;
+}
+div.bookedHotelinfo{
+  display: inline-flex;
+  padding: 1rem;
+  margin: 1rem;
+  width: 30vw;
+  border-bottom: 1px solid lightgray;
+}
+/* set style on hotel image and other info */
+div>img.hotel-photo{
+  width: 10vw;
+  height: 20vh;
+  border-radius:10px;
+}
+div.hotelName{
+  padding: 0.5rem;
+  height: 10vh;
+  text-wrap: wrap;
+}
+/* star review style */
+svg.star-icon{
+  margin-top: 0.2rem;
+}
+div.star-rating{
+  margin-top: 4rem;
+  display: inline-flex;
+  gap: 0.5rem;
+  font-size: 12px;
+}
+div.priceDetail{
+  margin: 1rem 2rem;
+}
+div.price-title{
+  font-size: 22px;
+  font-weight: bold;
+}
+/* set style on fees charge and other amount */
+div.bookingData,.airbnb-fees,.Taxes,.totalINR{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  font-size: 16px;
+  
+}
+.bookedDays,.amount,.serviceCharge,.Tax-charge{
+  font-size: 16px;
+  margin-right: 1rem;
+}
+div>a.airbnb-link{
+  color: #222;
+  font-size: 16px;
+}
+/* set style on total amount */
+div.total-text,span.totalAmount,div.totalAmount{
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+}
+div>button.paymentBtn{
+  width: 20vw;
+  height: 8vh;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  margin-left: 6rem;
+  background-color: #ff385c;
+  
+}
+button>a.paymentLink{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* admin.ejs stylesheet  */
+
+/* Style on butttn */
+button.create-hotel{
+  height: 8vh;
+  width: 10vw;
+  margin: 5rem 40rem;
+  border: none;
+  border-radius: 10px;
+  background-color:rgb(248, 132, 152) ;
+  font-size: 16px;
+  color: white;
+}
+/* style on background div */
+div.modalbg,div.login-bg{
+  background-color: black;
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  opacity: 0.8;
+  z-index: 2;
+  display: none;
+}
+/* style on table div */
+div.createhotel-model{
+  border-radius: 5px;
+  width: 50vw;
+  border: 1px solid lightgray;
+  margin: 0rem 20rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  position: absolute;
+  top:1rem;
+  z-index: 3;
+  display: none;
+}
+
+/* Set style on add hotel form */
+center.form-title{
+  font-size: 20px;
+  margin-top: 2rem;
+  
+}
+label.label-text{
+  margin-left: 5rem;
+}
+input.form-input{
+  width: 40vw;
+  height: 5vh;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  margin-left: 5rem;
+  
+}
+form.hotel-form{
+  margin: 0rem 5rem;
+  
+}
+/* style on buttons */
+button.formsubmitBtn,.cancelBtn{
+  height: 8vh;
+  width: 8vw;
+  background-color: rgb(3, 86, 155);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 12rem;
+  margin-bottom: 2rem;
+}
+button.cancelBtn{
+  background-color: #04AA6D;
+}
+/* style on table */
+table.table{
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 1rem 1rem; 
+}
+tr,td,th{
+  border: 1px solid lightgray;
+  text-align: left;
+  padding: 8px;
+  font-size: 12px;
+}
+th{
+  font-size: 16px;
+  background-color: whitesmoke;
+}
+button.actionBtn{
+  width: 5vw;
+}
+a.actionBtn{
+  color: black;
+}
+
+/* Media Query for responsive */
+@media screen and (max-width:768px){
+  div.nav-container{
+    display: inline-flex;
+}
+/* set logo position and set style */
+div.logo{
+  width: 15vw;
+}
+div.logo img{
+    height:60px;
+    width:100px; 
+}
+/* set style on search box */
+div.search-box{ 
+    margin-right:0.5rem;
+    width: 28%;
+}
+form.search-form{
+  display: inline-flex;
+}
+/* set style on Search buttons */
+
+input.serch-input{
+  width: 10vw;
+  font-size: 12px;
+}
+button.search-btn{
+  margin-right: 1rem;
+  margin-top: -0.2rem;
+}
+
+/* set style on profile div */
+div.profile{
+    margin-left: -0.1rem;
+}
+/* set style on airbnb button */
+button.airbnb-button{
+    font-size: 12px;
+}
+/* set style on language icon  */
+div.language{
+    margin-top: 1rem;
+}
+button.user-profile{
+  width: 7vw;
+}
+/* set style on hotels options */
+div.hotel-options{
+  padding-left: 0;
+}
+/* set style on hotel images */
+img.hoteltype-image{
+  height:3vh;
+  width:1.5vw;
+}
+span.hoteltype-name{
+  font-size: 10px;
+}
+/* set style on filter button */
+button.filter-btn{
+  margin-right: 1rem;
+  padding: 0;
+  width: 9vw;
+}
+div.totaltaxbleamt{
+  margin-right: 1rem;
+}
+/* set style on taxable button */
+button.taxable-amount{
+  width: 18vw; 
+}
+span.text{
+  font-size: 10px;
+}
+/* set style on toggle Switch */
+.switch {
+  width: 80px;
+}
+/* Hotel card Stylesheet */
+
+/* set style on Hotel card div */
+div.card-container{
+  margin-left: 1.5rem;
+}
+div.hotel-card{
+  padding-left: 0rem;
+}
+/* set style on arrow button */
+div>span.text-bold{
+  font-size: 12px;
+}
+
+div>button.load-more-btn{
+  font-size: 12px;
+}
+/* set style on inspiration area */
+div.inspiration{
+  padding:1rem;
+}
+div>span.insp-title{
+  font-size: 1.2rem;
+}
+div>button.insp-button{
+  font-size: 12px;
+}
+a>span.gatway-title{
+  font-size: 12px;
+}
+a>span.gatway-info{
+  font-size: 12px;
+}
+div.footer-end{ 
+  height: 55vh;
+  padding-top: 0.5rem;
+  margin-left: 2.5rem;
+}
+
+div.airbnb{
+  margin-left: 3rem;
+}
+/* set style on footer links */
+li{
+  padding-top: 0.8rem;
+}
+ul>li>a{
+  text-decoration: none;
+  color:#5c5b5b;
+  font-size: 12px
+}
+/* login form */
+div.login-page {
+  position: absolute;
+  top: 1rem;
+  left: 15rem;
+  height: 90vh;
+  width: 50vw;
+}
+/* style on login title */
+div>span.login-title {
+  font-size: 16px;
+}
+div.airbnb-title{
+  font-size: 18px;
+}
+div.container {
+  margin-top: 0.5rem;
+}
+/* style on user input */
+input.input {
+  padding: 5px 5px;
+
+}
+/* style on sign in and signup button */
+button.signin-btn,
+button.signup-btn {
+  padding: 5px 5px;
+}
+
+/* style on registartion form */
+div.register-form {
+  margin-top: 1rem;
+  margin-left: 12rem;
+  width: 55vw;
+}
+div.regi-form{
+  margin-left: 2rem;
+}
+/*style on input field  */
+input.regi-input {
+  padding: 10px;
+}
+/* hotels.ejs file stylesheet */
+
+  /* set style on hotels header */
+  div.hotels-header{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  div.hotel-name{
+    font-size: 18px;
+    
+  }
+  
+  div.left-images{
+    margin-left: 2rem;
+  }
+  div>img.img-left{
+    width: 400px;
+  }
+  div>img.img-right{
+    width: 150px;
+  }
+  /* set style on hotel info and other facility info */
+
+  div.hotel-info{
+    width: 40vw;
+    margin-left: 2rem;
+  }
+  div>span.hotel-name-city{
+    font-size: 18px;
+  }
+  ol>li.facility-list{
+    font-size: 14px;
+  }
+  div.hotel-review-dot{
+    margin-left: 0.5rem;
+  }
+  .hotel-review-text{
+    font-size: 14px;
+  }
+  /* set style on other hotels details like hosted and other */
+  div>span.hosting-title{
+    font-size: 14px;
+  }
+  span.hotel-someinfo-text{
+    font-size: 14px;
+  }
+  div>button.show-original-btn{
+    font-size: 14px;
+  }
+  div>p.hotel-description-text{
+    font-size: 14px;
+  }
+  div>p.spaces-text{
+    font-size: 14px;
+  }
+  div>button.show-more-btn{
+    font-size: 14px;
+  }
+/* set style on hotel booking */
+div.hotel-booking{
+  margin-left: 4rem;
+}
+/* booking div style */
+div.booking{
+  width: 45vw;
+}
+/* rate per night style */
+div>span.hotel-rate{
+  font-size: 18px;
+}
+div>span.rate-night{
+  font-size: 16px;
+}
+b.rate-text{
+  font-size: 18px;
+}
+/* checkin checkout button style */
+div>button.checkinOut{
+  width: 38vw;
+}
+/* No og guest selection style  */
+div.guest{
+  width: 36vw;
+}
+div>label.guest-text{
+  font-size: 14px;
+}
+div>input.guest-count{
+  width: 10vw;
+}
+
+/* reserve button style */
+div>button.btnComplete{
+width:38vw;
+}
+/* style on booking page */
+div.booking-container{
+  margin-left: 2rem;
+}
+div>span.req-text{
+  font-size: 22px;
+}
+/* booking trip style */
+div.trip-detail{
+  width: 35vw;
+}
+div>span.trip-text{
+  font-size: 20px;
+/* guest and booking style  */
+}
+div>span.date-text,div>span.guest-text{
+  font-size: 14px;
+}
+div>span.dates,div>span.guests{
+  font-size: 14px;
+}
+div>a.dateEdit,div>a.guestEdit{
+  font-size: 14px;
+}
+div>a.login-text{
+  font-size: 22px;
+}
+/* set style on booking payment div */
+div.booking-payment{
+  width: 40vw;
+}
+
+/* star review style */
+
+div.star-rating{
+  margin-top: -3rem;
+}
+
+div.price-title{
+  font-size: 18px;
+  
+}
+/* set style on fees charge and other amount */
+div.bookingData,.airbnb-fees,.Taxes,.totalINR{
+  margin-left: 0rem;
+  font-size: 14px;
+  
+}
+.bookedDays,.amount,.serviceCharge,.Tax-charge{
+  font-size: 14px;
+}
+/* set style on total amount */
+div.total-text,span.totalAmount,div.totalAmount{
+  font-size: 14px;
+}
+
+}
+
+@media screen and (max-width:425px){
+  div.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+/* set logo position and set style */
+div.logo{
+  width: 1%;
+}
+div.logo img{
+    height:60px;
+    width:80px; 
+}
+/* set style on Search buttons */
+
+input.serch-input{
+  width: 8vw;
+  font-size: 10px;
+}
+button.search-btn{
+  margin-left: -2rem;
+}
+/* set style on profile div */
+div.profile{
+    margin-left: -8rem;
+}
+/* set style on airbnb button */
+button.airbnb-button{
+    font-size: 9px;
+    width: 8%;
+    margin-left: 8rem;
+    margin-top: -0.5rem;
+}
+/* set style on language icon  */
+div.language{
+  margin-right:0.5rem;
+}
+button.user-profile{
+  width: 9vw;
+  margin-right: 2rem;
+}
+div.dropdown{
+  width:48vw;
+  position: absolute;
+  right: 0rem;
+  z-index: 0;
+}
+
+/* set style on hotels options */
+button.hotel-type-btn{
+  padding-left: 1rem;
+}
+/* set style on hotel images */
+
+
+/* set style on filter button */
+button.filter-btn{
+  width: 14vw;
+}
+div.totaltaxbleamt{
+  margin-left: 1rem;
+}
+/* set style on taxable button */
+button.taxable-amount{
+  margin-left: -1.5rem;
+  width: 31vw; 
+}
+span.text{
+  font-size: 9px;
+}
+/* Hotel card Stylesheet */
+
+/* set style on Hotel card div */
+div.card-container{
+  margin-left: 2rem;
+}
+div.hotel-images{
+  width:42vw;
+  height:48vh;
+  position: relative; 
+}
+img.hotel-photos{
+  width:42vw;
+  height:48vh;
+  border-radius: 10px;
+}
+div>button.load-more-btn{
+  height:8vh;
+  width: 15vw;
+  font-size: 12px;
+}
+
+/* set style on inspiration area */
+div.inspiration{
+  padding: 0;
+  width: 100%;
+}
+div>span.insp-title{
+  font-size: 1rem;
+}
+div>button.insp-button{
+  font-size: 10px;
+  padding: 0.3rem;
+  letter-spacing: 0;
+}
+div.insp-gatways{
+  margin-left: 1rem;
+  gap: 1.3rem;
+}
+a>span.gatway-title{
+  font-size: 10px;
+}
+a>span.gatway-info{
+  font-size: 10px;
+}
+div.footer-end{ 
+  height: 50vh;
+  padding-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+/* set style on footer links */
+div.footer-sm-left{
+
+  margin-left: 1rem;
+  margin-top: rem;
+}
+ul>li>a{
+  font-size: 10px
+}
+div.footer-sm-copyright,span>ol>li>a{
+  font-size: 10px;
+}
+/* login form */
+div.login-page {
+  position: absolute;
+  left: 1.5rem;
+  width: 90vw;
+}
+/* style on login title */
+div>span.login-title {
+  font-size: 14px;
+}
+div.airbnb-title{
+  font-size: 16px;
+}
+/* style on registartion form */
+div.register-form {
+  margin-left: 1rem;
+  width: 85vw;
+}
+/*style on input field  */
+input.regi-input {
+  padding: 10px;
+  width: 70vw;
+}
+button.registerbtn{
+  width: 70vw;
+}
+/* hotels.ejs file stylesheet */
+
+  /* set style on hotels header */
+  div.hotels-header{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  div.hotel-name{
+    font-size: 16px;
+  }
+  div>img.img-left{
+    width: 200px;
+    height: 50vh;
+  }
+  div>img.img-right{
+    width: 90px;
+    height: 24.3vh;
+  }
+  /* set style on hotel info and other facility info */
+
+  div.hotel-info{
+    width: 40vw;
+    margin-left: 2rem;
+  }
+  div>span.hotel-name-city{
+    font-size: 18px;
+  }
+  ol>li.facility-list{
+    font-size: 14px;
+  }
+  div.hotel-review-dot{
+    margin-left: 0.5rem;
+  }
+  .hotel-review-text{
+    font-size: 14px;
+  }
+  /* set style on other hotels details like hosted and other */
+  div>span.hosting-title{
+    font-size: 14px;
+  }
+  span.hotel-someinfo-text{
+    font-size: 14px;
+  }
+  div>button.show-original-btn{
+    font-size: 14px;
+  }
+  div>p.hotel-description-text{
+    font-size: 14px;
+  }
+  div>p.spaces-text{
+    font-size: 14px;
+  }
+  div>button.show-more-btn{
+    font-size: 14px;
+  }
+/* set style on hotel booking */
+div.hotel-booking{
+  margin-left: 4rem;
+}
+/* booking div style */
+div.booking{
+  width: 45vw;
+}
+/* rate per night style */
+div>span.hotel-rate{
+  font-size: 18px;
+}
+div>span.rate-night{
+  font-size: 16px;
+}
+b.rate-text{
+  font-size: 18px;
+}
+/* checkin checkout button style */
+div>button.checkinOut{
+  width: 38vw;
+}
+/* No og guest selection style  */
+div.guest{
+  width: 36vw;
+}
+div>label.guest-text{
+  font-size: 14px;
+}
+div>input.guest-count{
+  width: 10vw;
+}
+
+/* reserve button style */
+div>button.btnComplete{
+width:38vw;
+}
+/* style on booking page */
+div.booking-container{
+  margin-left: 2rem;
+}
+div>span.req-text{
+  font-size: 22px;
+}
+/* booking trip style */
+div.trip-detail{
+  width: 35vw;
+}
+div>span.trip-text{
+  font-size: 20px;
+/* guest and booking style  */
+}
+div>span.date-text,div>span.guest-text{
+  font-size: 14px;
+}
+div>span.dates,div>span.guests{
+  font-size: 14px;
+}
+div>a.dateEdit,div>a.guestEdit{
+  font-size: 14px;
+}
+div>a.login-text{
+  font-size: 22px;
+}
+/* set style on booking payment div */
+div.booking-payment{
+  width: 40vw;
+}
+
+/* star review style */
+
+div.star-rating{
+  margin-top: -3rem;
+}
+
+div.price-title{
+  font-size: 18px;
+  
+}
+/* set style on fees charge and other amount */
+div.bookingData,.airbnb-fees,.Taxes,.totalINR{
+  margin-left: 0rem;
+  font-size: 14px;
+  
+}
+.bookedDays,.amount,.serviceCharge,.Tax-charge{
+  font-size: 14px;
+}
+/* set style on total amount */
+div.total-text,span.totalAmount,div.totalAmount{
+  font-size: 14px;
+}
+}

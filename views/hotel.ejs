@@ -1,0 +1,274 @@
+<%- include("partials/header") %>
+    <%- include("partials/home-navbar") %>
+
+        <!-- Hotel page UI -->
+        <div class="hotels">
+            <div class="hotels-header">
+                <div class="hotel-left">
+                    <div class="hotel-name">
+                        <%= hotelinfo.hotelinfo %>
+                    </div>
+                </div>
+                <div class="hotel-right">
+                    <button class="action-btn">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;">
+                                <g fill="none">
+                                    <path
+                                        d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9M16 3v23V3zM6 13l9.3-9.3a1 1 0 0 1 1.4 0L26 13">
+                                    </path>
+                                </g>
+                            </svg></span>
+                        <span>Share</span>
+                    </button>
+                    <button class="action-btn">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                                </path>
+                            </svg></span>
+                        <span>Save</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hotels-images">
+                <div class="left-images">
+                    <img class="img-left" src="<%= hotelinfo.images[0] %>" alt="">
+                </div>
+                <div class="right-images">
+                    <img class="img-right" src="<%= hotelinfo.images[1] %>" alt="">
+                    <img class="img-right border-top-img" src="<%= hotelinfo.images[2] %>" alt="">
+                    <img class="img-right " src="<%= hotelinfo.images[3] %>" alt="">
+                    <img class="img-right border-bottom-img" src="<%= hotelinfo.images[4] %>" alt="">
+                </div>
+            </div>
+            <div class="hotels-info-booking">
+                <div class="hotel-info">
+                    <div class="hotel-details">
+                        <div>
+                            <span class="hotel-name-city">
+                                <%= hotelinfo.hoteltitle %>
+                            </span>
+                        </div>
+                        <div class="hotel-facility">
+                            <span>
+                                <ol class="hotel-facility-details">
+                                    <li class="facility-list">
+                                        <%= hotelinfo.guest %>
+                                    </li>
+                                    <li>
+                                        <div class="hotel-dot"> </div>
+                                    </li>
+                                    <li class="facility-list">
+                                        <%= hotelinfo.bedroom %>
+                                    </li>
+                                    <li>
+                                        <div class="hotel-dot"> </div>
+                                    </li>
+                                    <li class="facility-list">
+                                        <%= hotelinfo.bed %>
+                                    </li>
+                                    <li>
+                                        <div class="hotel-dot"> </div>
+                                    </li>
+                                    <li class="facility-list">
+                                        <%= hotelinfo.bathroom %>
+                                    </li>
+                                </ol>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="hotel-reviews">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                            role="presentation" focusable="false"
+                            style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                            <path fill-rule="evenodd"
+                                d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                            </path>
+                        </svg>
+                        <span class="hotel-review-text">4.86</span>
+                        <div class="hotel-review-dot"></div>
+                        <a href="#" class="hotel-review-text">314 reviews</a>
+                    </div>
+                    <hr class="hotel-hr">
+                    <div class="hotel-hosted">
+                        <div>
+                            <img class="hosted-image"
+                                src="https://a0.muscache.com/im/pictures/user/3f65a996-928e-4869-9164-2d5526277c84.jpg?im_w=240">
+                        </div>
+                        <div class="hosted-details">
+                            <span class="hosting-title">Hosted by Made</span>
+                            <div class="hosting-time">
+                                <span class="hosting-text">Superhost</span>
+                                <div class="hotel-dot hosting-dot"></div>
+                                <span class="hosting-text">10 years hosting</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hotel-hr">
+                    <div class="hotel-hosting-info">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                <path
+                                    d="M26 2a1 1 0 0 1 .92.61l.04.12 2 7a1 1 0 0 1-.85 1.26L28 11h-3v5h6v2h-2v13h-2v-2.54a3.98 3.98 0 0 1-1.73.53L25 29H7a3.98 3.98 0 0 1-2-.54V31H3V18H1v-2h5v-4a1 1 0 0 1 .88-1h.36L6.09 8.4l1.82-.8L9.43 11H12a1 1 0 0 1 1 .88V16h10v-5h-3a1 1 0 0 1-.99-1.16l.03-.11 2-7a1 1 0 0 1 .84-.72L22 2h4zm1 16H5v7a2 2 0 0 0 1.7 1.98l.15.01L7 27h18a2 2 0 0 0 2-1.85V18zm-16-5H8v3h3v-3zm14.24-9h-2.49l-1.43 5h5.35l-1.43-5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="hosted-details">
+                            <span class="hosting-title">Dedicated workspace</span>
+                            <span>A common area with wifi that’s well suited for working.</span>
+                        </div>
+                    </div>
+                    <div class="hotel-hosting-info">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                <path
+                                    d="M24.33 1.67a2 2 0 0 1 2 1.85v24.81h3v2H2.67v-2h3V3.67a2 2 0 0 1 1.85-2h.15zm-4 2H7.67v24.66h12.66zm4 0h-2v24.66h2zm-7 11a1.33 1.33 0 1 1 0 2.66 1.33 1.33 0 0 1 0-2.66z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="hosted-details">
+                            <span class="hosting-title">Self check-in</span>
+                            <span>You can check in with the building staff.</span>
+                        </div>
+                    </div><br>
+                    <div class="hotel-hosting-info">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                <path
+                                    d="M16 17a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM25.67.33a2 2 0 0 1 2 1.85v6.54a2 2 0 0 1-.97 1.7l-.14.08-9.67 4.84a2 2 0 0 1-1.61.07l-.17-.07-9.67-4.84a2 2 0 0 1-1.1-1.62V2.33a2 2 0 0 1 1.84-2h.15zm0 2H6.33v6.39L16 13.55l9.67-4.83z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="hosted-details">
+                            <span class="hosting-title">Made is a Superhost</span>
+                            <span>Superhosts are experienced, highly rated Hosts.</span>
+                        </div>
+                    </div>
+                    <hr class="hotel-hr">
+                    <div class="hotel-someinfo">
+                        <span class="hotel-someinfo-text">Some info has been automatically translated.</span>
+                        <button class="show-original-btn">Show Original</button>
+                    </div>
+                    <div class="hotel-description">
+                        <p class="hotel-description-text">
+                            For your first booking, you can choose to welcome an experienced guest who has at least
+                            three stays and a good track record on Airbnb.
+                            New Hosts get one-tap access to specially trained Community Support agents who can help with
+                            everything from account issues to billing support.
+                        </p>
+                        <p class="spaces-text">The spaces...</p>
+                        <button class="show-more-btn">Show more ></button>
+                    </div>
+                    <hr class="hotel-hr">
+                </div>
+
+                <!-- Hotel booking form UI -->
+                <div class="hotel-booking">
+                    <form action="/booking/<%=hotelinfo._id%>" method="POST">
+                        <div class="booking">
+                            <div class="rate-per-night">
+                                    <b class="rate-text"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                        </svg>
+                                        <span class="hotel-rate" id="hotelRate"> <%= hotelinfo.rentperNight %></span>
+                                    </b> &nbsp;&nbsp;&nbsp;night
+                            </div>
+
+                            <div class="hotel-checkin-details">
+                                <button class="checkinOut">
+                                    <div class="check-in">
+                                        <label class="check-in-text">CHECK-IN</label>
+                                        <input type="date" class="check-in-date" id="date1" name="checkinDate"
+                                            onchange="findcheckinDate()">
+
+                                    </div>
+                                    <div class="checkout">
+                                        <label class="check-out-text">CHECK-OUT</label>
+                                        <input type="date" class="check-out-date" id="date2" name="checkoutDate"
+                                            onchange="findcheckoutDate()">
+                                    </div>
+                                </button>
+                                <div class="guest">
+
+                                    <label class="guest-text" for="points">Guest</label><br>
+                                    <input class="guest-count" type="number" name="guest" step="1"
+                                        placeholder="No of guest">
+                                </div>
+
+                            </div>
+                            <div class="complete-btn">
+                                <button type="submit" class="btnComplete">Reserve</button>
+                            </div>
+                            <div class="guest-rules">You won't be charged yet</div>
+                            <div class="bookingData">
+                                <div class="bookedDays">
+                                    <svg class="rs-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        fill="currentColor" class="bibi-currency-rupee" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                    </svg>
+                                    <%= hotelinfo.rentperNight %> X <span class="bookedDays" id="noofDays">1</span>
+                                </div>
+                                <div class="amount">
+                                    <svg class="rs-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        fill="currentColor" class="bibi-currency-rupee" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                    </svg>
+                                    <span id="totalAmount" class="amount"></span>
+                                </div>
+                            </div>
+                            <div class="airbnb-fees">
+                                <div class="airbnbFees"><a class="airbnb-link" href="#">Airbnb service fee</a></div>
+                                <div class="serviceCharge">
+                                    <svg class="rs-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        fill="currentColor" class="bibi-currency-rupee" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                    </svg>
+                                    <span class="serviceCharge" id="servicecharge">2000</span>
+                                </div>
+
+                            </div>
+
+                            <hr>
+                            <div class="totalINR">
+                                <div class="total-text">Toal(INR)</div>
+                                <div class="totalAmount"><svg class="rs-icon" xmlns="http://www.w3.org/2000/svg"
+                                        width="14" height="14" fill="currentColor" class="bibi-currency-rupee"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                    </svg>
+                                    <span id="totalINR" class="totalAmount"></span>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                </div>
+                </form>
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+        <script src="/js/index.js">
+            </script>
+
+        <%- include("partials/footer") %>

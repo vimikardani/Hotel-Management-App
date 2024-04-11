@@ -1,0 +1,115 @@
+<%- include("partials/header") %>
+    <div class="admin-container">
+        <button class="create-hotel" onclick="Openform()">Create Hotel</button>
+    </div>
+    <table class="table">
+      <thead class="thead">
+        <tr>
+          <th scope="col">HotelID</th>
+          <th scope="col">Hotelname</th>
+          <th scope="col">Images</th>
+          <th scope="col">City</th>
+          <th scope="col">Kilometer</th>
+          <th scope="col">Hoteltitle</th>
+          <th scope="col">Rentper Night</th>
+          <th scope="col">HotelInfo</th>
+          <th scope="col">Guest</th>
+          <th scope="col">Bedroom</th>
+          <th scope="col">Bed</th>
+          <th scope="col">Bathroom</th>
+          <th scope="col-2">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+    <% showhotelinfo.forEach((hotel)=>{ %>
+    
+          <tr>
+            <td><%= hotel._id%></td>
+            <td><%= hotel.hotelName%></td>
+            <td><%= hotel.images %></td>
+            <td><%= hotel.city %></td>
+            <td><%= hotel.kiloMeter %></td>
+            <td><%= hotel.hoteltitle %></td>
+            <td><%= hotel.rentperNight %></td>
+            <td><%= hotel.hotelinfo %></td>
+            <td><%= hotel.guest %></td>
+            <td><%= hotel.bedroom %></td>
+            <td><%= hotel.bed %></td>
+            <td><%= hotel.bathroom %></td>
+            <td>
+              <button class="actionBtn" onclick="updateHotel('<%= hotel._id %>')">Edit</button><br>
+              <a class="actionBtn" href="/deletehotel/<%= hotel._id %>">Delete</a>
+            
+          </td>
+            <div class="createhotel-model" id="createHotelform">
+              <center class="form-title">Create Hotel form</center><hr>
+              <form class="hotel-form" action="/addhotel" method="POST">
+                  <label class="label-text">Hotelname</label><br>
+                  <input class="form-input" type="text" name="hotelName" placeholder="Hotel Name" value="<%=hotel.hotelName%>"><br><br>
+                  <label class="label-text">Hotel images</label><br>
+                  <input class="form-input" type="text" name="images" placeholder="Hotel Images"><br><br>
+                  <label class="label-text">City</label><br>
+                  <input class="form-input" type="text" name="city" placeholder="Hotel City"><br><br>
+                  <label class="label-text">Kilometer</label><br>
+                  <input class="form-input" type="number" name="kiloMeter" placeholder="Kilometer"><br><br>
+                  <label class="label-text">Hoteltitle</label><br>
+                  <input class="form-input" type="text" name="hoteltitle" placeholder="Hotel Title"><br><br>
+                  <label class="label-text">Hotel Rent per night</label><br>
+                  <input class="form-input" type="number" name="rentperNight" placeholder="Hotel Rent per night"><br><br>
+                  <label class="label-text">Hotel Info</label><br>
+                  <input class="form-input" type="text" name="hotelinfo" placeholder="Hotel Info"><br><br>
+                  <label class="label-text">Guest</label><br>
+                  <input class="form-input" type="number" name="guest" placeholder="No of Guest Capacity"><br><br>
+                  <label class="label-text">Bedroom</label><br>
+                  <input class="form-input" type="number" name="bedroom" placeholder="Total no of Bedroom"><br><br>
+                  <label class="label-text">Bed</label><br>
+                  <input class="form-input" type="number" name="bed" placeholder="Total no of bed"><br><br>
+                  <label class="label-text">Bathroom</label><br>
+                  <input class="form-input" type="number" name="bathroom" placeholder="Total no of bathroom"><br><br>
+                  <button class="formsubmitBtn" type="submit">Submit </button>
+                  <button class="cancelBtn" type="reset" onclick="closeModel()">Cancel</button>
+              </form>
+          </div>
+          </tr>
+          
+          
+          <% }) %>
+    </tbody>
+  </table>
+
+  <div class='modalbg' id="modelBg"></div>
+    
+    <script>
+        // Admin. ejs file javascript
+let opencreateHotelform=false;
+    
+    function Openform(){
+        opencreateHotelform=!opencreateHotelform;
+        if(opencreateHotelform){
+            document.getElementById('modelBg').style.display="block";
+           document.getElementById('createHotelform').style.display="block";
+        }
+        else{
+          document.getElementById('modelBg').style.display="none";
+            document.getElementById('createHotelform').style.display="none";
+        }
+    }
+
+    function closeModel(){
+            document.getElementById('modelBg').style.display="none";
+            document.getElementById('createHotelform').style.display="none";
+    }
+
+    function updateHotel(){
+        document.getElementById('modelBg').style.display="block";
+        document.getElementById('createHotelform').style.display="block";
+        
+
+    }
+    
+
+
+
+    </script>
+
+    <%- include("partials/footer") %>

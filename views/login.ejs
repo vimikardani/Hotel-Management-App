@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+
+<!-- Login page UI -->
+
+<div class="login-page">
+  <div class="login-header">
+    <span class='login-title'>Log in or sign up</span>
+    
+  </div>
+  <hr>
+
+  <form class="login-form" action="/user/login" method="POST">
+      <div class="airbnb-title">Welcome to Airbnb</div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label><br>
+      <input class='input' type="text" placeholder="Enter Username" name="username"/><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input class='input' type="password" placeholder="Enter Password" name="password"/>
+
+      <button type='submit' class='signin-btn' >Sign In </button>
+      <button  class='signup-btn'><a class='signup-link' href="#">Sign Up</a></button>
+      
+    </div>
+  
+  </form>
+</div>
+
+<%- include("partials/footer") %>
+
